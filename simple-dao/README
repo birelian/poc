@@ -1,0 +1,5 @@
+Simple DAO POC. User input validation is out of scope.
+
+No generics and no inheritance in this version. The simplest way.
+
+Generics and inheritance in next version.
