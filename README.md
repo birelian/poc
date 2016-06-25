@@ -8,3 +8,4 @@ Please submit any error or correction you may think is interesting. Comments are
 
 1. simple-dao: Very simple implementation of the DAO pattern. No generics and no inheritance in this version. 
 
+2. generics-dao: Simple DAO pattern using Java generics.
