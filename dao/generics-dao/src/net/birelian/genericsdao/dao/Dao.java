@@ -17,7 +17,7 @@ public interface Dao<T> {
     /**
      * Find an entity by Id
      *
-     * @param id Item id
+     * @param id Entity id
      * @return The entity that has the given id, if exists.
      */
     T findById(Integer id);
@@ -25,7 +25,7 @@ public interface Dao<T> {
     /**
      * Save an entity
      *
-     * @param entity Item to be saved
+     * @param entity Entity to be saved
      */
     void save(T entity);
 
