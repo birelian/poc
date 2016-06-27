@@ -9,6 +9,25 @@ public class Contact extends Item {
     private String surname;
     private String email;
 
+    /**
+     * Default constructor
+     */
+    public Contact() {
+    }
+
+    /**
+     * All parameters constructor
+     *
+     * @param name Name
+     * @param surname Surname
+     * @param email Email
+     */
+    public Contact(String name, String surname, String email) {
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+    }
+
     public String getName() {
         return name;
     }

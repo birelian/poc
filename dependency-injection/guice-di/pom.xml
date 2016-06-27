@@ -12,6 +12,7 @@
 
         <!-- Dependencies properties -->
         <guice.version>4.0</guice.version>
+        <junit.version>4.12</junit.version>
 
         <!-- Other properties -->
         <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
@@ -25,6 +26,13 @@
             <groupId>com.google.inject</groupId>
             <artifactId>guice</artifactId>
             <version>${guice.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
