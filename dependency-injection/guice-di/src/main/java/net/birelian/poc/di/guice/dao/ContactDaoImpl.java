@@ -12,6 +12,11 @@ public class ContactDaoImpl implements ContactDao {
     private final Map<Integer, Contact> contacts = new HashMap<>();
     private Integer lastGeneratedId = 0;
 
+    public ContactDaoImpl() {
+
+        // Create test data
+        createTestData();
+    }
 
     @Override
     public Collection<Contact> findAll() {
@@ -56,5 +61,19 @@ public class ContactDaoImpl implements ContactDao {
         }
 
         return contactsFound;
+    }
+
+    private void createTestData() {
+        Contact solidSnakeContact = new Contact("Solid", "Snake", "solidsnake@shadowmoses.net");
+        solidSnakeContact.setId(1);
+        contacts.put(1, solidSnakeContact);
+
+        Contact otaconContact = new Contact("Hal", "Emmerich", "hal.emmerich@otaku.net");
+        otaconContact.setId(2);
+        contacts.put(2, otaconContact);
+
+        Contact liquidSnakeContact = new Contact("Liquid", "Snake", "solidsnake@shadowmoses.net");
+        liquidSnakeContact.setId(1);
+        contacts.put(3, liquidSnakeContact);
     }
 }
